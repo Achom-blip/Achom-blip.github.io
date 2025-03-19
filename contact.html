@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content ="width=device-width,initial-scale=1.0">
+        <meta name ="description"content="proffessional cv of Winnie Achom,a web 
+        developer specialising in front-end development".>
+        <meta name ="author"content = "Winnie Achom">
+        <title>MY CONTACTS</title>
+        <style>
+            body{
+                font-family: Arial,sans-serif;
+                margin: 20px;
+                padding: 0;
+                background-color: plum;
+            }
+            .container{
+                width: 100%;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                box-shadow: gray;
+                text-align: left;
+            }
+            a{
+                color: blue;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover{
+                color: blue;
+                text-decoration: underline;
+            }
+            label{
+                font-weight: bold;
+            }    
+            .input.textarea{
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border-radius: 4px;
+            }
+            button{
+                background-color: blueviolet;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                cursor: pointer;
+                border: 4px;
+            }
+            button:hover{
+                background-color: darkgreen;
+            }
+            .home-button{
+                position: fixed;
+                top: 5px;
+                left: 10px;
+                font-size: 14px;
+                text-decoration: none;
+                border-radius: 5px;
+                cursor: pointer;
+                border: none;
+                padding: 10px 15px;
+                display: inline-block;
+
+            }
+            .nav{
+                background: black;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 4px rgba(red, green, blue, alpha);
+            }
+            
+            
+            .navbar ul{
+                list-style-type: none;
+                padding: 0px;
+                margin: 0px;
+                background-color:black;
+                overflow: hidden;
+            }
+            .navbar a:hover{
+                background-color: grey;
+            }           
+            .navbar a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding:  15px;
+                transition: 0.3s;
+                text-align: center;
+            }
+            .navbar li{
+                float: center;
+            }
+        </style>
+    </head>  
+    <body>
+        <a href="curriculum vitae.html" class="home-button">back Home</a>
+        <nav class="navbar" >            
+            <ul>
+                <li><a href = "curriculum vitae" class= "active" > Home </a></li>
+                <li><a href = "contact.html" class ="active">contact</a></li>
+                <li><a href = "About.html" class = "active">About</a></li>
+                <li><a href = "personal experience.html" class = "active">personal experience</a></li>
+            </ul>           
+        </nav>
+        <div class="container">
+            <h1>CONTACT ME</h1>
+
+            <p><strong>phone :</strong> +254743367764</p>
+            <p><strong>Address:</strong> 203 Amoni ,Butesa,Kenya</p>
+            <p><strong>Email:</strong><a href="achomwinnie482@gmail.com"> Send me an email</a></p>
+            <hr>  <!--a horizontal line-->
+            
+            <div class="container">
+            <h2>Contact Form</h2>
+            <form action="Submit_form.php" method="POST">
+            <Label for= "Name">Enter your Name :</Label><br><br>
+            <input type="text" id=" Name" name=" Name" required ><br><br>
+
+            <label for="Email">Email Address*: </label><br><br>
+            <input type="text" id="Email" name="Email" required><br><br>
+
+            <label for="Subject">Message Subject :</label><br><br>
+            <input type="text" id=" Subject" name=" Subject" required><br><br>
+
+            <Label for=" Message*"> Enter your Message*:</Label><br><br>
+            <textarea id="message" name="meassage" required></textarea> <br><br>
+
+            <div class="checkbox">
+                <input type="Checkbox" id="copy" name="copy">
+                <label for="copy">E-mail a copy of this message to your own address.</label>
+            </div>
+             <button type="submit" class="send-button">send</button>
+            </div>
+        </div>
+    </body>  

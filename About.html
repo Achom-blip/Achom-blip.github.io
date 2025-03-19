@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content ="width=device-width,initial-scale=1.0">
+        <meta name ="description"content="proffessional cv of Winnie Achom,a web 
+        developer specialising in front-end development".>
+        <meta name ="author"content = "Winnie Achom">
+        <title>My Hobbies</title>
+        <style >
+            body{
+                background-color: lightblue;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+                padding: 0;
+            }
+            .container{
+                width: 80%;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                text-align: left;
+                display: grid;
+                
+                
+            }
+            .moving-name{
+                font-size: 48px;
+                font-weight: bold;
+                color: darkblue;
+                animation: moveText 15s infinite linear;
+            }
+            @keyframes moveText {
+                0%{transform: translateX(-100%);}
+                100%{transform: translateX(100%);}
+            }
+            Footer{
+                background: green;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+            } 
+            .home-button{
+                position: fixed;
+                top: 5px;
+                left: 10px;
+                font-size: 14px;
+                text-decoration: none;
+                border-radius: 5px;
+                cursor: pointer;
+                border: none;
+                padding: 10px 15px;
+                display: inline-block;
+
+            } 
+            .nav{
+                background: black;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 4px rgba(red, green, blue, alpha);
+            }
+            
+            .navbar ul{
+                list-style-type: none;
+                padding: 0px;
+                margin: 0px;
+                background-color:black;
+                overflow: hidden;
+            }
+            .navbar a:hover{
+                background-color: grey;
+            }           
+            .navbar a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding:  15px;
+                transition: 0.3s;
+                text-align: center;
+            }
+            .navbar li{
+                float: center; 
+            }         
+        </style>
+    </head>  
+    <body class="Hobbies-page">
+        <nav class="navbar" >            
+            <ul>
+                <li><a href = "curriculum vitae" class= "active" > Home </a></li>
+                <li><a href = "contact.html" class ="active">contact</a></li>
+                <li><a href = "About.html" class = "active">About</a></li>
+                <li><a href = "personal experience.html" class = "active">personal experience</a></li>
+            </ul>           
+        </nav>
+        <a href="curriculum vitae.html" class="home-button">back Home</a>
+
+        <div class="container">
+            
+            <h1 class="moving-name" >MY  HOBBIES</h1>
+            <h2>I(Top Hobbies)</h2>
+            <ol>
+                <li> Coding and Web Development</li>
+                <li>Reading Books</li>
+                <li>Travelling</li>
+                <li></li>
+            </ol>
+            <h2> II.(Other intrests)</h2>
+            <ul>
+                <li>Watching Movies</li>
+                <li>Listening to Music</li>
+                <li>Swimming</li>
+                <li>My own space</li>
+            </ul>
+        </div> 
+        <!--Footer--> 
+        <footer>
+            @copy;2025 Winnie Achom. All Rights Reserved.
+        </footer>     
+    </body> 
+</html>     

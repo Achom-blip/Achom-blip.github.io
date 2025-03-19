@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 of 5: Personal Information</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            width: 50%;
+            
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+       
+        
+        button {
+            padding: 10px 20px;
+            margin-right: 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background-color: purple;
+            color: white;
+        }
+        button[type="button"] {
+            background-color: purple;
+            color: white;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 0.9em;
+            color:plum;
+        }
+        Fieldset-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center-right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Step 1 of 5: Personal Information</h1>
+    <form id="registrationForm">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+
+            <label for="othernames">Other Names:</label>
+            <input type="text" id="othernames" name="othernames"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <label for="maritalstatus">Marital Status:</label>
+            <select id="maritalstatus" name="maritalstatus" required>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="placeofbirth">Place of Birth:</label>
+            <input type="text" id="placeofbirth" name="placeofbirth" required><br><br>
+
+            <label for="mothername">Mother's Name:</label>
+            <input type="text" id="mothername" name="mothername" required><br><br>
+
+            <label for="fathername">Father's Name:</label>
+            <input type="text" id="fathername" name="fathername" required><br><br>
+
+            <label for="dependents">Number of Dependents:</label>
+            <select id="dependents" name="dependents" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+
+            <label for="education">Level of Education:</label>
+            <input type="text" id="education" name="education" required><br><br>
+        </fieldset>
+
+        <!-- Security Information Section -->
+        <fieldset>
+            <legend>Security Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="retypepassword">Re-type Password:</label>
+            <input type="password" id="retypepassword" name="retypepassword" required><br><br>
+
+            <label for="securityquestion">Security Question:</label>
+            <select id="securityquestion" name="securityquestion" required>
+                <option value="mother's maiden name">Mother's maiden name</option>
+                <option value="first pet's name">First pet's name</option>
+                <option value="first school's name">First school's name</option>
+            </select><br><br>
+
+            <label for="answer">Answer:</label>
+            <input type="text" id="answer" name="answer" required><br><br>
+        </fieldset>
+
+        <!-- Navigation Buttons -->
+        <button type="button" onclick="alert('Previous button clicked!')">Previous</button>
+        <button type="submit">Next</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p "Margin-left:0;">Copyright © 2011 all rights reserved</p>
+    </footer>
+    
+</body>
+</html>
